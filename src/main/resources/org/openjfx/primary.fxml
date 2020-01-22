@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="550.0"
+          style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="org.openjfx.PrimaryController">
+   <children>
+      <TextArea fx:id="messageArea" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0">
+         <FlowPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </FlowPane.margin>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0" radius="6.26" width="6.04" />
+         </effect>
+      </TextArea>
+      <TextField fx:id="inputTextArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyReleased="#handleKeyReleased" prefHeight="26.0" prefWidth="520.0">
+         <FlowPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </FlowPane.margin>
+         <padding>
+            <Insets top="2.0" />
+         </padding>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0" />
+         </effect>
+      </TextField>
+   </children>
+   <effect>
+      <Glow/>
+   </effect>
+</FlowPane>
+

@@ -1,0 +1,4 @@
+module-info.class
+org/openjfx/ChatService.class
+org/openjfx/App.class
+org/openjfx/PrimaryController.class

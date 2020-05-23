@@ -1,4 +1,8 @@
 /home/diego/Developer/FxP2PChat/src/main/java/module-info.java
+/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/services/ChatReceiveTask.java
 /home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/PrimaryController.java
+/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/services/ChatShipTask.java
+/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/services/ChatReceiveService.java
+/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/services/ChatShipService.java
 /home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/App.java
-/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/ChatService.java
+/home/diego/Developer/FxP2PChat/src/main/java/org/openjfx/configuration/Configuration.java

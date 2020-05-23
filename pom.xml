@@ -55,11 +55,7 @@
                 <artifactId>client-maven-plugin</artifactId>
                 <version>${client.plugin.version}</version>
                 <configuration>
-                    <!-- Uncomment to run on iOS: -->
                     <target>android</target>
-                    <bundlesList>
-                        <list>org.openjfx</list>
-                    </bundlesList>
                     <reflectionList>
                         <list>javafx.fxml.FXMLLoader</list>
                         <list>org.openjfx.PrimaryController</list>

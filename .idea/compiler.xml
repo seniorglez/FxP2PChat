@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="FxP2PChat" />
         <module name="hellofx" />
+        <module name="FxP2PChat" />
       </profile>
     </annotationProcessing>
   </component>

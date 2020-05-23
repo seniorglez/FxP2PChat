@@ -1,0 +1,40 @@
+Process
+=======
+compile
+
+Command Line
+============
+/opt/graalvm-svm-linux-20.1.0-ea+28/bin/native-image --report-unsupported-elements-at-runtime -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:CompilerBackend=llvm -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+UseOnlyWritableBootImageHeap -H:+UseCAPCache -H:CAPCacheDir=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/capcache -H:CustomLD=/home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld -H:IncludeResourceBundles=hellofx.hello,com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /home/diego/Developer/FxP2PChat/target/classes:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar org.openjfx.App
+
+Output
+======
+[org.openjfx.app:5087]    classlist:   2,092.56 ms,  0.96 GB
+[org.openjfx.app:5087]        setup:     190.03 ms,  0.96 GB
+Fatal error:java.util.MissingResourceException: Can't find bundle for base name hellofx.hello, locale en_US
+	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:1284)
+	at com.oracle.svm.util.ModuleSupport.getResourceBundleFallback(ModuleSupport.java:81)
+	at com.oracle.svm.util.ModuleSupport.getResourceBundle(ModuleSupport.java:62)
+	at com.oracle.svm.core.jdk.LocalizationFeature.addBundleToCache(LocalizationFeature.java:261)
+	at com.oracle.svm.core.jdk.LocalizationFeature.addResourceBundles(LocalizationFeature.java:245)
+	at com.oracle.svm.core.jdk11.LocalizationFeatureJDK11OrLater.addResourceBundles(LocalizationFeatureJDK11OrLater.java:54)
+	at com.oracle.svm.core.jdk.LocalizationFeature.afterRegistration(LocalizationFeature.java:153)
+	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$11(NativeImageGenerator.java:825)
+	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:70)
+	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:825)
+	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:536)
+	at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:451)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1407)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+Error: Image build request failed with exit status 1
+
+
+Result
+======
+result: 1

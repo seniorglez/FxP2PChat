@@ -8,7 +8,6 @@ import javafx.scene.control.TextInputDialog;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.security.Provider;
 import java.util.Optional;
 
 /**

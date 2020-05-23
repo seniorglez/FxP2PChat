@@ -1,0 +1,420 @@
+[Sat May 02 23:40:38 CEST 2020][INFO] ==================== COMPILE TASK ====================
+[Sat May 02 23:40:38 CEST 2020][FINE] PB Command for check version: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/java -version
+[Sat May 02 23:40:38 CEST 2020][FINE] Start process check version...
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] openjdk version "11.0.6" 2020-01-14
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] OpenJDK Runtime Environment GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02)
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02, mixed mode, sharing)
+[Sat May 02 23:40:38 CEST 2020][FINE] Result for check version: 0
+[Sat May 02 23:40:38 CEST 2020][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Sat May 02 23:40:38 CEST 2020][FINE] Extracting native libs to: /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/lib
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/launcher.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/touch_events.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid.h
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Sat May 02 23:40:38 CEST 2020][FINE] PB Command for compile-additional-sources: /home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/hellofxml launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c
+[Sat May 02 23:40:38 CEST 2020][FINE] Start process compile-additional-sources...
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] javafx_adapter.c:85:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] javafx_adapter.c:106:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:40:38 CEST 2020][FINE] [SUB] 2 warnings generated.
+[Sat May 02 23:40:38 CEST 2020][FINE] Result for compile-additional-sources: 0
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/module-info.class to /tmp/classes8258843234708091900/module-info.class
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/styles.css to /tmp/classes8258843234708091900/org/openjfx/styles.css
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/App.class to /tmp/classes8258843234708091900/org/openjfx/App.class
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/ChatService.class to /tmp/classes8258843234708091900/org/openjfx/ChatService.class
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/primary.fxml to /tmp/classes8258843234708091900/org/openjfx/primary.fxml
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/PrimaryController.class to /tmp/classes8258843234708091900/org/openjfx/PrimaryController.class
+[Sat May 02 23:40:38 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/chatView.fxml to /tmp/classes8258843234708091900/org/openjfx/chatView.fxml
+[Sat May 02 23:40:38 CEST 2020][FINE] PB Command for jar: jar cf /tmp/classes8258843234708091900/classes.jar -C /tmp/classes8258843234708091900 .
+[Sat May 02 23:40:38 CEST 2020][FINE] Start process jar...
+[Sat May 02 23:40:38 CEST 2020][FINE] Result for jar: 0
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning for init build time files
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /tmp/classes8258843234708091900/classes.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning for reflection files
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /tmp/classes8258843234708091900/classes.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning for JNI files
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /tmp/classes8258843234708091900/classes.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning for resource files
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Scanning /tmp/classes8258843234708091900/classes.jar
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/AArch64LibCHelperDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/AMD64LibCHelperDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/BuiltinDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/JNIHeaderDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/LibFFIHeaderDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/LLVMDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] Looking for resource: /native/android/cap/PosixDirectives.cap
+[Sat May 02 23:40:38 CEST 2020][FINE] PB Command for compile: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/native-image --report-unsupported-elements-at-runtime -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:CompilerBackend=llvm -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+UseOnlyWritableBootImageHeap -H:+UseCAPCache -H:CAPCacheDir=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/capcache -H:CustomLD=/home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld -H:IncludeResourceBundles=hellofx.hello,com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /home/diego/Developer/FxP2PChat/target/classes:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar org.openjfx.App
+[Sat May 02 23:40:38 CEST 2020][FINE] Start process compile...
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] [org.openjfx.app:5087]    classlist:   2,092.56 ms,  0.96 GB
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] [org.openjfx.app:5087]        setup:     190.03 ms,  0.96 GB
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] Fatal error:java.util.MissingResourceException: Can't find bundle for base name hellofx.hello, locale en_US
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:1284)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundleFallback(ModuleSupport.java:81)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundle(ModuleSupport.java:62)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addBundleToCache(LocalizationFeature.java:261)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addResourceBundles(LocalizationFeature.java:245)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk11.LocalizationFeatureJDK11OrLater.addResourceBundles(LocalizationFeatureJDK11OrLater.java:54)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.afterRegistration(LocalizationFeature.java:153)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$11(NativeImageGenerator.java:825)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:70)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:825)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:536)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:451)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1407)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+[Sat May 02 23:40:41 CEST 2020][INFO] [SUB] Error: Image build request failed with exit status 1
+[Sat May 02 23:40:41 CEST 2020][FINE] Result for compile: 1
+[Sat May 02 23:40:41 CEST 2020][SEVERE] Process compile failed with result: 1
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.
+[Sat May 02 23:40:41 CEST 2020][INFO] Logging process [compile] to file: /home/diego/Developer/FxP2PChat/target/client/log/process-compile-1588455641454.log
+[Sat May 02 23:40:41 CEST 2020][SEVERE] Compiling failed.
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.
+[Sat May 02 23:43:55 CEST 2020][INFO] ==================== COMPILE TASK ====================
+[Sat May 02 23:43:55 CEST 2020][FINE] PB Command for check version: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/java -version
+[Sat May 02 23:43:55 CEST 2020][FINE] Start process check version...
+[Sat May 02 23:43:55 CEST 2020][FINE] [SUB] openjdk version "11.0.6" 2020-01-14
+[Sat May 02 23:43:55 CEST 2020][FINE] [SUB] OpenJDK Runtime Environment GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02)
+[Sat May 02 23:43:55 CEST 2020][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02, mixed mode, sharing)
+[Sat May 02 23:43:56 CEST 2020][FINE] Result for check version: 0
+[Sat May 02 23:43:56 CEST 2020][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Sat May 02 23:43:56 CEST 2020][FINE] Extracting native libs to: /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/lib
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/launcher.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/touch_events.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid.h
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Sat May 02 23:43:56 CEST 2020][FINE] PB Command for compile-additional-sources: /home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/hellofxml launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c
+[Sat May 02 23:43:56 CEST 2020][FINE] Start process compile-additional-sources...
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB] javafx_adapter.c:85:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB] javafx_adapter.c:106:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:43:56 CEST 2020][FINE] [SUB] 2 warnings generated.
+[Sat May 02 23:43:56 CEST 2020][FINE] Result for compile-additional-sources: 0
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/module-info.class to /tmp/classes9758906688437102851/module-info.class
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/styles.css to /tmp/classes9758906688437102851/org/openjfx/styles.css
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/App.class to /tmp/classes9758906688437102851/org/openjfx/App.class
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/ChatService.class to /tmp/classes9758906688437102851/org/openjfx/ChatService.class
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/primary.fxml to /tmp/classes9758906688437102851/org/openjfx/primary.fxml
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/PrimaryController.class to /tmp/classes9758906688437102851/org/openjfx/PrimaryController.class
+[Sat May 02 23:43:56 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/chatView.fxml to /tmp/classes9758906688437102851/org/openjfx/chatView.fxml
+[Sat May 02 23:43:56 CEST 2020][FINE] PB Command for jar: jar cf /tmp/classes9758906688437102851/classes.jar -C /tmp/classes9758906688437102851 .
+[Sat May 02 23:43:56 CEST 2020][FINE] Start process jar...
+[Sat May 02 23:43:56 CEST 2020][FINE] Result for jar: 0
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning for init build time files
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /tmp/classes9758906688437102851/classes.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning for reflection files
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /tmp/classes9758906688437102851/classes.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning for JNI files
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /tmp/classes9758906688437102851/classes.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning for resource files
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Scanning /tmp/classes9758906688437102851/classes.jar
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/AArch64LibCHelperDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/AMD64LibCHelperDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/BuiltinDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/JNIHeaderDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/LibFFIHeaderDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/LLVMDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] Looking for resource: /native/android/cap/PosixDirectives.cap
+[Sat May 02 23:43:56 CEST 2020][FINE] PB Command for compile: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/native-image --report-unsupported-elements-at-runtime -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:CompilerBackend=llvm -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+UseOnlyWritableBootImageHeap -H:+UseCAPCache -H:CAPCacheDir=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/capcache -H:CustomLD=/home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld -H:IncludeResourceBundles=hellofx.hello,com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /home/diego/Developer/FxP2PChat/target/classes:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar org.openjfx.App
+[Sat May 02 23:43:56 CEST 2020][FINE] Start process compile...
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] [org.openjfx.app:5404]    classlist:   2,094.21 ms,  0.96 GB
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] [org.openjfx.app:5404]        setup:     185.96 ms,  0.96 GB
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] Fatal error:java.util.MissingResourceException: Can't find bundle for base name hellofx.hello, locale en_US
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:1284)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundleFallback(ModuleSupport.java:81)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundle(ModuleSupport.java:62)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addBundleToCache(LocalizationFeature.java:261)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addResourceBundles(LocalizationFeature.java:245)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk11.LocalizationFeatureJDK11OrLater.addResourceBundles(LocalizationFeatureJDK11OrLater.java:54)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.afterRegistration(LocalizationFeature.java:153)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$11(NativeImageGenerator.java:825)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:70)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:825)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:536)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:451)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1407)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+[Sat May 02 23:43:58 CEST 2020][INFO] [SUB] Error: Image build request failed with exit status 1
+[Sat May 02 23:43:58 CEST 2020][FINE] Result for compile: 1
+[Sat May 02 23:43:58 CEST 2020][SEVERE] Process compile failed with result: 1
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.
+[Sat May 02 23:43:58 CEST 2020][INFO] Logging process [compile] to file: /home/diego/Developer/FxP2PChat/target/client/log/process-compile-1588455838971.log
+[Sat May 02 23:43:58 CEST 2020][SEVERE] Compiling failed.
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.
+[Sat May 02 23:44:11 CEST 2020][INFO] ==================== COMPILE TASK ====================
+[Sat May 02 23:44:11 CEST 2020][FINE] PB Command for check version: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/java -version
+[Sat May 02 23:44:11 CEST 2020][FINE] Start process check version...
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] openjdk version "11.0.6" 2020-01-14
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] OpenJDK Runtime Environment GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02)
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] OpenJDK 64-Bit Server VM GraalVM 20.1.0-dev (build 11.0.6+9-jvmci-20.0-b02, mixed mode, sharing)
+[Sat May 02 23:44:11 CEST 2020][FINE] Result for check version: 0
+[Sat May 02 23:44:11 CEST 2020][INFO] We will now compile your code for aarch64-linux-android. This may take some time.
+[Sat May 02 23:44:11 CEST 2020][FINE] Extracting native libs to: /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/lib
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/launcher.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/javafx_adapter.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/touch_events.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/glibc_shim.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/attach_adapter.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid.h
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/c/grandroid_ext.h
+[Sat May 02 23:44:11 CEST 2020][FINE] PB Command for compile-additional-sources: /home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -c -DSUBSTRATE -target aarch64-linux-android -I. -I/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/hellofxml launcher.c javafx_adapter.c touch_events.c glibc_shim.c attach_adapter.c
+[Sat May 02 23:44:11 CEST 2020][FINE] Start process compile-additional-sources...
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] javafx_adapter.c:85:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] javafx_adapter.c:106:5: warning: incompatible pointer types passing 'void **' to parameter of type 'JNIEnv **' (aka 'const struct JNINativeInterface ***') [-Wincompatible-pointer-types]
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     ATTACH_DALVIK();
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     ^~~~~~~~~~~~~~~
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] ./grandroid_ext.h:82:56: note: expanded from macro 'ATTACH_DALVIK'
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]     (*dalvikVM)->AttachCurrentThreadAsDaemon(dalvikVM, (void **) &dalvikEnv, NULL); \
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB]                                                        ^~~~~~~~~~~~~~~~~~~~
+[Sat May 02 23:44:11 CEST 2020][FINE] [SUB] 2 warnings generated.
+[Sat May 02 23:44:11 CEST 2020][FINE] Result for compile-additional-sources: 0
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/module-info.class to /tmp/classes5673452151693524316/module-info.class
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/styles.css to /tmp/classes5673452151693524316/org/openjfx/styles.css
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/App.class to /tmp/classes5673452151693524316/org/openjfx/App.class
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/ChatService.class to /tmp/classes5673452151693524316/org/openjfx/ChatService.class
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/primary.fxml to /tmp/classes5673452151693524316/org/openjfx/primary.fxml
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/PrimaryController.class to /tmp/classes5673452151693524316/org/openjfx/PrimaryController.class
+[Sat May 02 23:44:11 CEST 2020][FINE] Copied resource /home/diego/Developer/FxP2PChat/target/classes/org/openjfx/chatView.fxml to /tmp/classes5673452151693524316/org/openjfx/chatView.fxml
+[Sat May 02 23:44:11 CEST 2020][FINE] PB Command for jar: jar cf /tmp/classes5673452151693524316/classes.jar -C /tmp/classes5673452151693524316 .
+[Sat May 02 23:44:11 CEST 2020][FINE] Start process jar...
+[Sat May 02 23:44:11 CEST 2020][FINE] Result for jar: 0
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning for init build time files
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /tmp/classes5673452151693524316/classes.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning for reflection files
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /tmp/classes5673452151693524316/classes.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning for JNI files
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Adding classes from /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar::META-INF/substrate/config/jniconfig-aarch64-android.json
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /tmp/classes5673452151693524316/classes.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning for resource files
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Scanning /tmp/classes5673452151693524316/classes.jar
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/AArch64LibCHelperDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/AMD64LibCHelperDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/BuiltinDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/JNIHeaderDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/LibFFIHeaderDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/LLVMDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] Looking for resource: /native/android/cap/PosixDirectives.cap
+[Sat May 02 23:44:11 CEST 2020][FINE] PB Command for compile: /opt/graalvm-svm-linux-20.1.0-ea+28/bin/native-image --report-unsupported-elements-at-runtime -Djdk.internal.lambda.eagerlyInitialize=false --no-server -H:+ExitAfterRelocatableImageWrite -H:+SharedLibrary -H:+AddAllCharsets -H:+ReportExceptionStackTraces -H:-DeadlockWatchdogExitOnTimeout -H:DeadlockWatchdogInterval=0 --features=org.graalvm.home.HomeFinderFeature -H:TempDirectory=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/tmp -H:EnableURLProtocols=http,https -H:ReflectionConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/reflectionconfig-aarch64-android.json -H:JNIConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/jniconfig-aarch64-android.json -H:ResourceConfigurationFiles=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/resourceconfig-aarch64-android.json -H:CompilerBackend=llvm -H:-SpawnIsolates -Dsvm.targetArch=aarch64 -H:+UseOnlyWritableBootImageHeap -H:+UseCAPCache -H:CAPCacheDir=/home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/capcache -H:CustomLD=/home/diego/.gluon/substrate/Android/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld -H:IncludeResourceBundles=hellofx.hello,com/sun/javafx/scene/control/skin/resources/controls,com/sun/javafx/scene/control/skin/resources/controls-nt,com.sun.javafx.tk.quantum.QuantumMessagesBundle -Dsvm.platform=org.graalvm.nativeimage.Platform$LINUX_AARCH64 -cp /home/diego/Developer/FxP2PChat/target/classes:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-base.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-controls.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-fxml.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar:/home/diego/.gluon/substrate/javafxStaticSdk/15-ea+gvm17/android-aarch64/sdk/lib/javafx-graphics.jar org.openjfx.App
+[Sat May 02 23:44:11 CEST 2020][FINE] Start process compile...
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] [org.openjfx.app:5561]    classlist:   2,053.08 ms,  0.96 GB
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] [org.openjfx.app:5561]        setup:     202.98 ms,  0.96 GB
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] Fatal error:java.util.MissingResourceException: Can't find bundle for base name hellofx.hello, locale en_US
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:2055)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1689)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1593)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.ResourceBundle.getBundle(ResourceBundle.java:1284)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundleFallback(ModuleSupport.java:81)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.util.ModuleSupport.getResourceBundle(ModuleSupport.java:62)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addBundleToCache(LocalizationFeature.java:261)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.addResourceBundles(LocalizationFeature.java:245)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk11.LocalizationFeatureJDK11OrLater.addResourceBundles(LocalizationFeatureJDK11OrLater.java:54)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.core.jdk.LocalizationFeature.afterRegistration(LocalizationFeature.java:153)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$setupNativeImage$11(NativeImageGenerator.java:825)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.FeatureHandler.forEachFeature(FeatureHandler.java:70)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.setupNativeImage(NativeImageGenerator.java:825)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:536)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:451)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1407)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
+[Sat May 02 23:44:14 CEST 2020][INFO] [SUB] Error: Image build request failed with exit status 1
+[Sat May 02 23:44:14 CEST 2020][FINE] Result for compile: 1
+[Sat May 02 23:44:14 CEST 2020][SEVERE] Process compile failed with result: 1
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.
+[Sat May 02 23:44:14 CEST 2020][INFO] Logging process [compile] to file: /home/diego/Developer/FxP2PChat/target/client/log/process-compile-1588455854612.log
+[Sat May 02 23:44:14 CEST 2020][SEVERE] Compiling failed.
+Check the log files under /home/diego/Developer/FxP2PChat/target/client/aarch64-android/gvm/log
+And please check https://docs.gluonhq.com/client/ for more information.

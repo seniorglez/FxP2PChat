@@ -2,6 +2,7 @@ org/openjfx/services/ChatShipService.class
 module-info.class
 org/openjfx/App.class
 org/openjfx/services/ChatShipTask.class
+org/openjfx/services/ChatReceiveService.class
 org/openjfx/services/ChatReceiveTask.class
 org/openjfx/configuration/Configuration.class
 org/openjfx/PrimaryController.class

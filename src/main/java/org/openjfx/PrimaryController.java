@@ -7,6 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import org.openjfx.configuration.Configuration;
 import org.openjfx.services.ChatShipService;
 
 import java.net.URL;
@@ -32,7 +33,8 @@ public class PrimaryController implements Initializable {
     @FXML
     private void handleKeyReleased(KeyEvent keyEvent){
         if(keyEvent.getCode()== KeyCode.ENTER){
-            //cs.sendMsg("fxClient",inputTextArea.getText());
+            chatShipService.setMessage(inputTextArea.getText());
+            chatShipService.restart();
             inputTextArea.setText("");
         }
     }//keyPressed - when the key goes down

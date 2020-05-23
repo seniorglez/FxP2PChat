@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.openjfx</groupId>
-    <artifactId>hellofx</artifactId>
+    <artifactId>fxp2pchat</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>hellofxml</name>
+    <name>FxP2PChat</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,7 +14,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <javafx.version>14</javafx.version>
         <client.plugin.version>0.1.23</client.plugin.version>
-        <mainClassName>hellofx/org.openjfx.App</mainClassName>
+        <mainClassName>org.openjfx.App</mainClassName>
     </properties>
 
     <dependencies>
@@ -58,18 +58,17 @@
                     <!-- Uncomment to run on iOS: -->
                     <target>android</target>
                     <bundlesList>
-                        <list>hellofx.hello</list>
+                        <list>org.openjfx</list>
                     </bundlesList>
                     <reflectionList>
                         <list>javafx.fxml.FXMLLoader</list>
-                        <list>hellofx.HelloController</list>
-                        <list>javafx.scene.control.Button</list>
-                        <list>javafx.scene.control.Label</list>
+                        <list>org.openjfx.PrimaryController</list>
+                        <list>javafx.scene.control.TextField</list>
+                        <list>javafx.scene.control.TextArea</list>
                     </reflectionList>
                     <mainClass>${mainClassName}</mainClass>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
     <pluginRepositories>

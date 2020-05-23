@@ -5,7 +5,7 @@ An example of javaFX P2P chat using Service and ScheduledService.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-For this application you will need to run two clients to test it so make sure you switch the in and out port numbers on /Configuration.java before you compile the second client.
+For this application you will need to run two clients to test it so make sure you switch the in and out port numbers on [Configuration.java](/src/main/java/org/openjfx/configuration/Configuration.java) before you compile the second client.
 
 ### Prerequisites
 

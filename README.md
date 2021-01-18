@@ -9,7 +9,7 @@ For this application you will need to run two clients to test it so make sure yo
 
 ### Prerequisites
 
-#### Mac OS X and iOS
+#### Mac OS
 
 * Download this version of Graal VM: https://download2.gluonhq.com/substrate/graalvm/graalvm-svm-darwin-20.1.0-ea+28.zip and unpack it like you would any other JDK. (e.g. in `/opt`)
 
@@ -25,7 +25,7 @@ For example:
 
     export JAVA_HOME=$GRAALVM_HOME
 
-#### Linux and Android
+#### Linux 
 
 * Download this version of Graal VM: https://download2.gluonhq.com/substrate/graalvm/graalvm-svm-linux-20.1.0-ea+28.zip and unpack it like you would any other JDK. (e.g. in `/opt`)
 
@@ -55,108 +55,6 @@ To run the native image:
 
 or simply run the native executable found in `target/client`.
 
-## Build and run the samples on iOS
-
-
-* iOS can be built only on Mac OS X
-
-* Install `Homebrew`, if you haven't already. Please refer to https://brew.sh/ for more information.
-
-* Install `libusbmuxd`
-
-Using `brew`:
-
-    brew install --HEAD libusbmuxd
-
-* Install `libimobiledevice`
-
-Using `brew`:
-
-    brew install --HEAD libimobiledevice
-
-### Build using Maven
-
-
-* Set the target to `ios` (for iOS devices) in the `pom.xml`:
-
-```
-<artifactId>client-maven-plugin</artifactId>
-<configuration>
-    <target>ios</target>
-    <mainClass>${mainClassName}</mainClass>
-</configuration>
-```
-
-* Build the native image:
-
-```
-mvn clean client:build
-```
-
-* Run the app on the connected iOS device:
-
-```
-mvn client:run
-```
-
-* Package and create an IPA file to submit to TestFlight or to the App Store:
-
-```
-mvn client:package
-```
-
-**Note**: In order to deploy apps to an iOS device, you need a valid iOS provisioning profile, as explained in the [documentation](https://docs.gluonhq.com/client/#_ios_deployment).
-
-## Build and run the samples on Android
-
-* Android can be built only on Linux OS
-
-The client plugin will download the Android SDK and install the required packages. Alternatively, you can define a custom location to the Android SDK by setting the `ANDROID_SDK` environment variable, making sure that you have installed all the packages from the following list:
-
-* platforms;android-27
-* platform-tools
-* build-tools;27.0.3
-* ndk-bundle
-* extras;android;m2repository
-* extras;google;m2repository
-
-### Build using Maven
-
-* Set the target to `android` (for android devices) in `pom.xml`:
-
-```
-<artifactId>client-maven-plugin</artifactId>
-<configuration>
-    <target>android</target>
-    <mainClass>${mainClassName}</mainClass>
-</configuration>
-```
-
-* Build the native image:
-
-```
-mvn clean client:build
-```
-
-* Package and create an APK file:
-
-```
-mvn client:package
-```
-
-* Install the APK file on a connected Android device:
-
-```
-mvn client:install
-```
-
-* Run the installed app on the connected Android device:
-
-```
-mvn client:run
-```
-
-
 ## Built With
 
 * [Maven](https://maven.apache.org/) - The build automation tool
@@ -164,8 +62,6 @@ mvn client:run
 * [OpenJavaFX](https://openjfx.io/) - An open source, next generation client application platform for desktop, mobile and embedded systems built on Java.
 * [javafx-maven-plugin](https://github.com/openjfx/javafx-maven-plugin) - The javaFX plugin for javaFX 11 or higher projets.
 * [client-maven-plugin](https://github.com/gluonhq/client-maven-plugin) - Plugin that simplifies using Gluon Client for Java/JavaFX maven projects.
-* [jackson-databind](https://github.com/FasterXML/jackson-databind) - The popular framework that allows us to map rest json responses as java objects.
-* [chucknorris.io](https://api.chucknorris.io/) - A free JSON API for hand curated Chuck Norris facts.
 
 ## Contributing
 
